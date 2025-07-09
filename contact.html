@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - My Trading Academy</title>
+  <link rel="stylesheet" href="clarity style.css" />
+</head>
+<body>
+
+  <header>
+    <img src="/storage/emulated/0/Download/clarity.png" class="logo"/>
+  </header>
+    <P></P>
+    <nav>
+      <b> 
+        <a href="home.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="contact.html">Contacts</a>
+      </b>
+    </nav>
+  
+
+  <section>
+    <h2>Contact Us</h2>
+    <form id="contactForm" action="mailto:khalidabdullahiahmad8@gmail.com">
+      <input type="text" placeholder="Your Name" required/>
+      <input type="email" placeholder="Your Email" required/>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formResponse"></p>
+  </section>
+
+  <footer>
+    &copy; TRADING CLARITY
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('formResponse').innerText = "Thank you! We'll get back to you soon.";
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
